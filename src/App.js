@@ -1,10 +1,10 @@
-import './App.css';
+import Stoper from './components/Stoper/Stoper.js';
 
 const App = () => {
   return(
-    <Container>
+    <div>
       <Stoper />
-    </Container>
+    </div>
   );
 }
 

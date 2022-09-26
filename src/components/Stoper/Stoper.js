@@ -1,8 +1,11 @@
-import styles from './Stoper.module.scss';
+import Button from "../Button/Button";
+import { useEffect, useState } from "react";
+
 
 const Stoper = () => {
-    const timer [timer, setTimer] = useState();
-    const time[time, setTime] = useState(0);
+    
+  const [timer, setTimer] = useState()
+  const [time, setTime] = useState(0) 
 
     const start = () => {
         clearInterval(timer);
@@ -54,7 +57,7 @@ const Stoper = () => {
     }, []);
 
     return (
-        <div className={styles.stopwatchWrapper}>
+        <div >
             <h1>{hh} : {mm} : {ss} . {ms}</h1>
             <Button action={start}>START</Button>
             <Button action={stop}>STOP</Button>
